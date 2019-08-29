@@ -1,0 +1,28 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class=" bod">
+  <div style="text-align:center">
+    <h1>
+      Welcome to {{ title }}!
+    </h1>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card text-center">
+        <div class="card-body">
+          <label class="card-text">Input any GitHub username</label> <br>
+          <input type="text" placeholder="Username"><br><br>
+          <button href="#" class="btn btn-primary">Search</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <img src="https://github.githubassets.com/images/modules/open_graph/github-octocat.png" width="230">
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <router-outlet></router-outlet>
