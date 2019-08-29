@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { User } from '../user';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-profile',
@@ -9,20 +10,22 @@ import { User } from '../user';
 })
 export class ProfileComponent implements OnInit {
 
-  users:User[];
+  // users:User[];
   user:User;
   constructor(private http:HttpClient) { }
 
   ngOnInit() {
 
     interface ApiResponse{
-username:string;
-fullName:string;
-profile:string;
-repoNumber:number;
+login:string;
+name:string;
+avatar_url:string;
+public_repos:number;
     }
-    this.http.get<ApiResponse>("'https://api.github.com/users/'+username+'?access_token='+ environment.key")
-    this.user
+    this.http.get<ApiResponse>("https://api.github.com/users/ahiodette?access_token="+environment.key).subscribe(data=>{
+      this.user = new User(data.login, data.name, data.avatar_url, data.public_repos)
+    })
+    
   }
 
 }
