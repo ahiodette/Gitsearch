@@ -10,13 +10,19 @@ import { User } from '../user';
 export class ProfileComponent implements OnInit {
 
   users:User[];
+  user:User;
   constructor(private http:HttpClient) { }
 
   ngOnInit() {
 
     interface ApiResponse{
-
+username:string;
+fullName:string;
+profile:string;
+repoNumber:number;
     }
+    this.http.get<ApiResponse>("'https://api.github.com/users/'+username+'?access_token='+ environment.key")
+    this.user
   }
 
 }
