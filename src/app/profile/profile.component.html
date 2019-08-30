@@ -1,7 +1,23 @@
-<img src="{{user.avatar_url}}">
-
-<p>Username: {{user.login}}</p>
-<p>Name: {{user.name}}</p>
-<p>Repositories: {{user.public_repos}}</p>
-<!-- <p>{{user.profile}}</p> -->
-
+<div class="row">
+    <div class="col-md-4">
+        <img src="{{user.avatar_url}}"><br>
+        <button type="button" class="btn btn-primary btn-lg">View the profile</button>
+    </div>
+    <div class="col-md-3">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <p>Username: {{user.login}}</p>
+            </li>
+            <li class="list-group-item">
+                <p>Name: {{user.name}}</p>
+            </li>
+            <li class="list-group-item">
+                <p>Repositories: {{user.public_repos}}</p>
+            </li>
+            <!-- <p>{{user.profile}}</p> -->
+        </ul>
+    </div>
+    <div class="col-md-4">
+        <h5 class="card-title text-center">Repositories</h5>
+    </div>
+</div>

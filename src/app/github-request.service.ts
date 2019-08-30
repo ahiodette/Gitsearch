@@ -11,7 +11,7 @@ import { User } from '../app/user';
 export class GithubRequestService {
   user: User;
   constructor(private http: HttpClient) {
-    this.user = new User("", "", "", 0);
+    this.user = new User("", "", "", 0,0,new Date(),0,"");
   }
 
   githubRequest() {
