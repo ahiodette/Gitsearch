@@ -14,10 +14,30 @@
             <li class="list-group-item">
                 <p>Repositories: {{user.public_repos}}</p>
             </li>
-            <!-- <p>{{user.profile}}</p> -->
+            <li class="list-group-item">
+                    <p>Followers: {{user.followers}}</p>
+                </li>
+                <li class="list-group-item">
+                        <p>Following: {{user.following}}</p>
+                    </li>
         </ul>
     </div>
     <div class="col-md-4">
         <h5 class="card-title text-center">Repositories</h5>
+        <div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <p> {{user.public_repos}} Repos</p>
+                    <button class=""><a href="{{repository.httml_url}}"></a>View them in profile</button>
+                </li>
+                <!-- <li class="list-group-item">
+                    <p>Name: {{user.name}}</p>
+                </li>
+                <li class="list-group-item">
+                    <p>Repositories: {{user.public_repos}}</p>
+                </li> -->
+                <!-- <p>{{user.profile}}</p> -->
+            </ul>
+        </div>
     </div>
 </div>
