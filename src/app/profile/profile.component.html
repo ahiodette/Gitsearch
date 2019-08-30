@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-md-4">
         <img src="{{user.avatar_url}}"><br>
-        <button type="button" class="btn btn-primary btn-lg">View the profile</button>
+        <!-- <button type="button" class="btn btn-primary btn-lg">View the profile</button> -->
     </div>
     <div class="col-md-3">
         <ul class="list-group">
@@ -12,11 +12,14 @@
                 <p>Name: {{user.name}}</p>
             </li>
             <li class="list-group-item">
-                    <p>Followers: {{user.followers}}</p>
-                </li>
-                <li class="list-group-item">
-                        <p>Following: {{user.following}}</p>
-                    </li>
+                <p>Created on: {{user.created_at|date}}</p>
+            </li>
+            <li class="list-group-item">
+                <p>Followers: {{user.followers}}</p>
+            </li>
+            <li class="list-group-item">
+                <p>Following: {{user.following}}</p>
+            </li>
         </ul>
     </div>
     <div class="col-md-4 text-center">
@@ -25,7 +28,8 @@
             <ul class="list-group">
                 <li class="list-group-item">
                     <p> {{user.public_repos}} Repos</p>
-                    <button class=""><a href="{{user.url}}"></a>View them in profile</button>
+                    <a href="https://github.com/ahiodette?tab=repositories" target="_blank" class="list-group-item list-group-item-action active">View
+                        them in profile</a>
                 </li>
             </ul>
         </div>

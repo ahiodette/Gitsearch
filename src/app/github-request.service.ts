@@ -11,7 +11,7 @@ import { User } from '../app/user';
 export class GithubRequestService {
   user: User;
   constructor(private http: HttpClient) {
-    this.user = new User("", "", "", 0,0,0,"");
+    this.user = new User("", "", "",0,0,new Date(),0,"");
   }
 
   githubRequest() {
@@ -22,8 +22,9 @@ export class GithubRequestService {
       avatar_url: string;
       followers:number;
       following:number;
+      created_at:Date;
       public_repos: number;
-      url: string;
+      repos_url: string;
     }
     let promise = new Promise((resolve, reject) => {
       this.http.get<ApiResponse>("https://api.github.com/users/ahiodette?access_token="+environment.key).toPromise().then(response => {
@@ -32,8 +33,9 @@ export class GithubRequestService {
         this.user.avatar_url= response.avatar_url
         this.user.followers=response.followers
         this.user.following=response.following
+        this.user.created_at=response.created_at
         this.user.public_repos = response.public_repos
-        this.user.url=response.url
+        this.user.repos_url=response.repos_url
 
         resolve()
       },
@@ -44,7 +46,7 @@ export class GithubRequestService {
           this.user.followers=0
           this.user.following=0
           this.user.public_repos = 0
-          this.user.url= "Not found"
+          this.user.repos_url= "Not found"
 
           reject(error)
         })
