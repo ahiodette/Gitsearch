@@ -13,7 +13,9 @@ The Gitsearch is an application designed to help users search for the GitHub use
 * Search for .[My GitHub page].(https://github.com/ahiodette/Gitsearch)
 * The app can be viewed using either mobile devices or computer
 
-## 
+## App Specifications 
+
+In this Gitsearch app, the user enters the usernaame and then can view the number of repositories associated to that GitHub user account. The user can also view the number of followers and the number of people following that GitHub user. There is also a link to the Github, to help the searcher view all informations on GitHub
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
