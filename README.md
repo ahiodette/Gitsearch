@@ -1,9 +1,19 @@
 # Gitsearch
 
 The Gitsearch application is an application where the user enters the GitHub username and then, can view the information of the of the entered username.
-#### by Odette Ahishakiye on ***August 31st, 2019***
+#### by Odette Ahishakiye on **August 31st, 2019**
 
-## Development server
+## Description
+The Gitsearch is an application designed to help users search for the GitHub users information. The user is able to view the name, the number of public repositories, the followers and the number of people that the GitHub user is following; and the date on which the user account has been created.
+
+## Setup/Installation Requirements
+
+* Open your computer
+* Connect to internet
+* Search for .[My GitHub page].(https://github.com/ahiodette/Gitsearch)
+* The app can be viewed using either mobile devices or computer
+
+## 
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
