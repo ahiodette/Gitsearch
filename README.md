@@ -1,6 +1,7 @@
 # Gitsearch
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
+The Gitsearch application is an application where the user enters the GitHub username and then, can view the information of the of the entered username.
+#### by Odette Ahishakiye on ***August 31st, 2019***
 
 ## Development server
 
