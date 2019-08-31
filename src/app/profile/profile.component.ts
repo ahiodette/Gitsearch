@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { User } from '../user';
 import { environment } from '../../environments/environment';
 import { GithubRequestService } from '../github-request.service';
+import { ActivatedRoute, ParamMap } from  '@angular/router'
 
 @Component({
   selector: 'app-profile',
@@ -13,12 +14,13 @@ export class ProfileComponent implements OnInit {
 
   // users:User[];
   user: User;
-  constructor(private githubRequestService: GithubRequestService) {
+  constructor(private githubRequestService: GithubRequestService, private route:ActivatedRoute) {
     this.githubRequestService = githubRequestService;
   }
 
   ngOnInit() {
-    this.githubRequestService.githubRequest()
+    let username=this.route.snapshot.paramMap.get('username')
+    this.githubRequestService.githubRequest(username)
     this.user = this.githubRequestService.user
     
 

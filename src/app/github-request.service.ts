@@ -14,7 +14,7 @@ export class GithubRequestService {
     this.user = new User("", "", "",0,0,new Date(),0,"");
   }
 
-  githubRequest() {
+  githubRequest(username) {
     interface ApiResponse {
       
       login: string;
@@ -27,7 +27,7 @@ export class GithubRequestService {
       html_url: string;
     }
     let promise = new Promise((resolve, reject) => {
-      this.http.get<ApiResponse>("https://api.github.com/users/ahiodette?access_token="+environment.key).toPromise().then(response => {
+      this.http.get<ApiResponse>("https://api.github.com/users/"+username+"?access_token="+environment.key).toPromise().then(response => {
         this.user.login = response.login
         this.user.name = response.name
         this.user.avatar_url= response.avatar_url
