@@ -8,7 +8,7 @@ export class User {
         public following:number,
         public created_at:Date,
         public public_repos:number,
-        public url:string
+        public html_url:string
          ){
         this.repoList=false;
     }

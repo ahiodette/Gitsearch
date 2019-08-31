@@ -24,7 +24,7 @@ export class GithubRequestService {
       following:number;
       created_at:Date;
       public_repos: number;
-      url: string;
+      html_url: string;
     }
     let promise = new Promise((resolve, reject) => {
       this.http.get<ApiResponse>("https://api.github.com/users/ahiodette?access_token="+environment.key).toPromise().then(response => {
@@ -35,7 +35,7 @@ export class GithubRequestService {
         this.user.following=response.following
         this.user.created_at=response.created_at
         this.user.public_repos = response.public_repos
-        this.user.url=response.url
+        this.user.html_url=response.html_url
 
         resolve()
       },
@@ -46,7 +46,7 @@ export class GithubRequestService {
           this.user.followers=0
           this.user.following=0
           this.user.public_repos = 0
-          this.user.url= "Not found"
+          this.user.html_url= "Not found"
 
           reject(error)
         })

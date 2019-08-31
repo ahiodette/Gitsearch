@@ -12,7 +12,7 @@
                 <p>Name: {{user.name}}</p>
             </li>
             <li class="list-group-item">
-                <p>Created on: {{user.created_at|date}}</p>
+                <p>Member since: {{user.created_at|date}}</p>
             </li>
             <li class="list-group-item">
                 <p>Followers: {{user.followers}}</p>
@@ -28,7 +28,7 @@
             <ul class="list-group">
                 <li class="list-group-item">
                     <p> {{user.public_repos}} Repos</p>
-                    <a href="https://github.com/ahiodette?tab=repositories" target="_blank" class="list-group-item list-group-item-action active">View
+                    <a href="{{user.html_url}}" target="_blank" class="list-group-item list-group-item-action active">View
                         them in profile</a>
                 </li>
             </ul>
