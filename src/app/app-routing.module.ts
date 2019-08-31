@@ -6,7 +6,7 @@ import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
   { path: 'search-form', component: SearchFormComponent },
-  { path: 'profile', component: ProfileComponent }
+  { path: 'profile/:username', component: ProfileComponent }
 ];
 
 @NgModule({

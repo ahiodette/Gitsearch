@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class SearchFormComponent implements OnInit {
 
   goToUrl(username){
-    this.router.navigate(['/user',username])
+    this.router.navigate(['/profile',username])
   }
   constructor(private router:Router) { }
 

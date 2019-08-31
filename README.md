@@ -15,26 +15,24 @@ The Gitsearch is an application designed to help users search for the GitHub use
 
 ## App Specifications 
 
-In this Gitsearch app, the user enters the usernaame and then can view the number of repositories associated to that GitHub user account. The user can also view the number of followers and the number of people following that GitHub user. There is also a link to the Github, to help the searcher view all informations on GitHub
+In this Gitsearch app, the user enters the usernaame and then can view the number of repositories associated to that GitHub user account. The user can also view the number of followers and the number of people following that GitHub user. There is also a link to the Github, to help the searcher view all informations on GitHub.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Known Bugs
 
-## Code scaffolding
+The user nanot automatically see
+ the list of repositories, unless he/she visits the GitHub profile for the searched GitHub user.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Technologies used
 
-## Build
+* HTML
+* CSS
+* Angular JS
+* GitHub
+* Terminal
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Support and Contact details
 
-## Running unit tests
+In case you may need any support about this app, do not hesitate to contact the developer on ahiode6@gmail.com
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Licence
+Copyright (c)2019 **Odette Ahishakiye** 
