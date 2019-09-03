@@ -10,7 +10,7 @@ The Gitsearch is an application designed to help users search for the GitHub use
 
 * Open your computer
 * Connect to internet
-* Search for .[My GitHub page].(https://github.com/ahiodette/Gitsearch)
+* Search for [My GitHub page](https://github.com/ahiodette/Gitsearch)
 * The app can be viewed using either mobile devices or computer
 
 ## App Specifications 
